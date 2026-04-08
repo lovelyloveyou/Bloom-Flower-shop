@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #2e2e2e;
+}
+
+/* CONTAINER */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* HEADER */
+.header {
+  background: #ffffff;
+  border-bottom: 1px solid #eee;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  color: #e91e63;
+  font-weight: 600;
+}
+
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+.nav a:hover {
+  color: #e91e63;
+}
+
+/* HERO */
+.hero {
+  height: 500px;
+  background: url('images/flowers.jpg') center/cover no-repeat;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.hero-content {
+  position: relative;
+  height: 100%;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* BUTTON */
+.btn {
+  background: #e91e63;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 25px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #c2185b;
+}
+
+/* PRODUCTS */
+.products {
+  padding: 70px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.product-card {
+  background: #fff8f5;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.product-card span {
+  color: #e91e63;
+  font-weight: 600;
+}
+
+/* WHY */
+.why {
+  background: #f6c1cc;
+  padding: 70px 0;
+}
+
+.features {
+  display: flex;
+  gap: 30px;
+  text-align: center;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 70px 0;
+}
+
+/* FOOTER */
+.footer {
+  background: #2e2e2e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+  }
+}
